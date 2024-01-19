@@ -19,6 +19,8 @@ function gotowhatsapp() {
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
 
+    console.log(name,email,message);
+
     var url = "https://wa.me/917003989928?text=" 
     + "Name: " + name + "%0a"
     + "E-mail: " + email  + "%0a"
