@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo-bg.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo-bg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+    <title>Argha's Portfolio</title>
+    <style>
+        .scroll-effect {
+            transition: background-position 12s ease-in-out;
+        }
+
+        #project .right:hover .scroll-effect {
+            background-position: 0% 100%;
+        }
+
+        .frame:hover img {
+            transform: translateY(calc(-100% + 400px));
+        }
+    </style>
+</head>
+
+<body class="font-raleway">
+
+    <!-- navigation bar -->
+
+    <nav class="container z-30 bg-white flex mx-auto py-4 px-4 justify-between sticky top-0 items-center">
+        <a href="/" class="logo flex items-center">
+            <img src="./images/logo-bg.png" class="w-8 lg:w-12" alt="">
+            <p class="font-semibold text-primary-color text-xl lg:text-3xl">Portfolio</p>
+        </a>
+        <div class="menu">
+            <ul class="hidden lg:flex justify-center items-center space-x-5">
+                <li><a href="/"
+                        class="text-primary-color font-bold hover:text-purple-600 active:text-purple-600 active:font-bold">Homepage</a>
+                </li>
+                <li><a href="#about"
+                        class="text-primary-color font-bold hover:text-purple-600 active:text-purple-600 active:font-bold">About</a>
+                </li>
+                <li><a href="#project"
+                        class="text-primary-color font-bold hover:text-purple-600 active:text-purple-600 active:font-bold">Project</a>
+                </li>
+                <li><a href="#contact"
+                        class="text-primary-color font-bold hover:text-purple-600 active:text-purple-600 active:font-bold">Contact</a>
+                </li>
+            </ul>
+            <div id="hamburger" class="space-y-1 lg:hidden cursor-pointer z-20">
+                <div class="w-6 h-0.5 bg-primary-color"></div>
+                <div class="w-6 h-0.5 bg-primary-color"></div>
+                <div class="w-6 h-0.5 bg-primary-color"></div>
+            </div>
+            <ul id="menu"
+                class="hidden bg-primary-color absolute left-0 top-16 w-full p-10 space-y-10 text-white text-center">
+                <li>
+                    <a id="hLink" href="/">Homepage</a>
+                </li>
+                <li>
+                    <a id="hLink" href="#about">About</a>
+                </li>
+                <li>
+                    <a id="hLink" href="#services">Project</a>
+                </li>
+                <li>
+                    <a id="hLink" href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a id="hLink" href="mail:sealargha@gmail.com"
+                        class="px-4 py-2 bg-white text-primary-color rounded-md">Email Me</a>
+                </li>
+            </ul>
+        </div>
+        <div class="my-contact hidden lg:block">
+            <a href="mail:sealargha@gmail.com"
+                class="text-white bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">sealargha@gmail.com</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="hero-sec container  px-4 flex flex-col lg:flex-row mx-auto">
+        <div class="right flex flex-col justify-center py-6 lg:w-1/2 w-full">
+            <h1 class="font-bold text-5xl text-primary-color mb-3">Welcome to <br> Argha Seal's Portfolio!</h1>
+            <p class="text-2xl font-semibold mb-3 h-14">Greetings! I'm Argha Seal,<br> <Span id="text"
+                    class="text-purple-600"></Span>
+            </p>
+            <p>I love creating beautiful and user-friendly websites. Explore my projects within these digital walls
+                to
+                see how I combine stylish design with strong functionality.</p>
+            <div class="my-contact mt-4 lg:block">
+                <a href="mail:sealargha@gmail.com"
+                    class="text-white  bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-8 py-2.5 text-center me-2 mb-2">Email</a>
+                <a href="tel:7003989928"
+                    class="text-white  bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-8 py-2.5 text-center me-2 mb-2">Call</a>
+                <a href="./ArghaSeal FreshResume.pdf" download="ArghaSeal Reasume"
+                    class="text-white  bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-8 py-2.5 text-center me-2 mb-2">Download
+                    CV</a>
+            </div>
+
+        </div>
+        <div class="left lg:ml-[130px] lg:w-1/2 w-full">
+            <img src="./images/IMG_20230813_175208.webp" class="w-full py-4" alt="">
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div id="about" class="container  px-4 flex mx-auto py-14 flex-col items-center lg:flex-row">
+        <div class="left w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+            <h2 class="text-primary-color text-5xl font-bold mb-4">WHO AM I?</h2>
+            <p class="text-2xl font-semibold mb-3">I'm Argha Seal, a Front End Web Developer</p>
+            <p>Hi there! I'm a Front-End Web Developer who loves creating smooth and enjoyable user
+                experiences. I'm skilled in HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap, and I turn creative
+                ideas into reality. Currently working at iB Arts Pvt., I handle projects and improve the online presence
+                of a major men's health clinic in the USA. I excel in problem-solving, balancing both visual appeal and
+                technical excellence. Let's connect and discover exciting opportunities in the ever-changing world of
+                web development!</p>
+            <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+                <div class="flex items-center justify-center sm:justify-start">
+                    <p class="font-body text-lg font-semibold uppercase text-grey-20">
+                        Connect with me
+                    </p>
+                    <div class="hidden sm:block">
+                        <svg class="h-[18px] w-[18px] text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center pt-5 md:pl-2 sm:justify-start sm:pt-0">
+
+                    <a href="https://github.com/ARGHASeal007" class="">
+                        <svg class="h-[18px] w-[18px] text-primary-color hover:text-purple-600" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/argha-seal-95b0181b3/" class="pl-4">
+                        <svg class="h-[18px] w-[18px] text-primary-color hover:text-purple-600" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/bobyseal?t=CP-vL5IdhFdpQDhDS7oX7g&s=08" class="pl-4">
+                        <svg class="h-[18px] w-[18px] text-primary-color hover:text-purple-600" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+            <div>
+                <div class="flex items-end justify-between">
+                    <h4 class="font-semibold uppercase text-black">
+                        HTML & CSS
+                    </h4>
+                    <h3 class="text-3xl font-bold text-primary-color">85%</h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-gray-300">
+                    <div class="h-3 rounded-full bg-primary-color" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="pt-5">
+                <div class="flex items-end justify-between">
+                    <h4 class="font-semibold uppercase text-black">
+                        JavaScript
+                    </h4>
+                    <h3 class="text-3xl font-bold text-primary-color">60%</h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-gray-300">
+                    <div class="h-3 rounded-full bg-primary-color" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="pt-5">
+                <div class="flex items-end justify-between">
+                    <h4 class="font-semibold uppercase text-black">
+                        WordPress
+                    </h4>
+                    <h3 class="text-3xl font-bold text-primary-color">72%</h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-gray-300">
+                    <div class="h-3 rounded-full bg-primary-color" style="width: 72%"></div>
+                </div>
+            </div>
+            <div class="pt-5">
+                <div class="flex items-end justify-between">
+                    <h4 class="font-semibold uppercase text-black">
+                        Tailwind & Bootstrap
+                    </h4>
+                    <h3 class="text-3xl font-bold text-primary-color">75%</h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-gray-300">
+                    <div class="h-3 rounded-full bg-primary-color" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="pt-5">
+                <div class="flex items-end justify-between">
+                    <h4 class="font-semibold uppercase text-black">
+                        Photoshop
+                    </h4>
+                    <h3 class="text-3xl font-bold text-primary-color">80%</h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-gray-300">
+                    <div class="h-3 rounded-full bg-primary-color" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Section -->
+
+    <div id="project" class="container px-4 flex mx-auto py-16 flex-col gap-10 lg:flex-row lg:items-center">
+        <div class="left w-full lg:w-2/5">
+            <p class="text-black uppercase text-xs font-semibold pb-5">Current Project</p>
+            <h2 class="text-primary-color text-5xl font-bold mb-3">Gameday Men's Health</h2>
+            <p>Currently, my team and I are working on that project for 'iB Arts Pvt Ltd,' and We used the DIVI Theme
+                builder on WordPress to build this website. The website is fully optimized for SEO and represents as a
+                popular men's health brand in the USA</p>
+            <ul class="list-image-[url(./images/check.png)] pl-6 pt-4 space-y-3">
+                <li>A WordPress Website</li>
+                <li>Build In Divi Theme Builder</li>
+                <li>Performance & SEO Optimize</li>
+                <li>User-Friendly Interface</li>
+            </ul>
+            <div class="mt-5">
+                <a href="https://gamedaymenshealth.com/" target="_blank"
+                    class="text-white bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Discover</a>
+            </div>
+        </div>
+        <div class="right w-full lg:w-3/5 lg:pl-[80px] lg:h-[450px] lg:overflow-hidden cursor-pointer">
+            <div class="scroll-effect hidden lg:block bg-no-repeat bg-cover w-full h-full"
+                style="background-image: url(./images/Gameday\ Website.png)"></div>
+            <img src="./images/Gameday Website.png" alt="" class="w-full h-full">
+        </div>
+    </div>
+
+    <div id="portfolio" class="container px-4 mx-auto py-16">
+        <div class="pb-16">
+            <p class="text-black uppercase text-xs font-semibold pb-5">Portfolio</p>
+            <h2 class="text-primary-color text-5xl font-bold mb-3">Check Out Other projects</h2>
+            <p>Explore my recent projects and case studies</p>
+        </div>
+        <hr class="border-t-2 border-black">
+        <div class="py-12 flex flex-col gap-10 lg:flex-row lg:items-center">
+            <div class="left lg:pr-[80px] w-full lg:w-3/5">
+                <div class="frame w-full h-[500px] shadow-lg shadow-black/40 overflow-hidden cursor-pointer">
+                    <img src="./images/BeyondBasics Website.png"
+                        class="object-cover w-full translate-y-0 ease-in-out duration-[12000ms]" alt="website">
+                </div>
+            </div>
+            <div class="right w-full lg:w-2/5">
+                <h2 class="text-primary-color text-5xl font-bold mb-3">Beyond Basics Physical Therapy</h2>
+                <p>In my current job, this was the first project I worked on. I created the website using the DIVI Theme
+                    Builder, and I used JavaScript for specific components and sections. The website focuses on health,
+                    especially for women.</p>
+                <div class="mt-5">
+                    <a href="https://beyondbasicsphysicaltherapy.com/" target="_blank"
+                        class="text-white bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Discover</a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="border-t-2 border-black">
+        <div class="py-12 flex flex-col gap-10 lg:flex-row lg:items-center">
+            <div class="left lg:pr-[80px] w-full lg:w-3/5">
+                <div class="frame w-full h-[500px] shadow-lg shadow-black/40 overflow-hidden cursor-pointer">
+                    <img src="./images/Myacme Website.png"
+                        class="object-cover w-full translate-y-0 ease-in-out duration-[12000ms]" alt="website">
+                </div>
+            </div>
+            <div class="right w-full lg:w-2/5">
+                <h2 class="text-primary-color text-5xl font-bold mb-3">Myacme</h2>
+                <p>I made this website about sexual disorders and problems as part of my freelancing work. It's built on
+                    WordPress using the Elementor theme builder, and I used the Gravity Form for the website's forms.
+                </p>
+                <div class="mt-5">
+                    <a href="https://myacme.in/" target="_blank"
+                        class="text-white bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Discover</a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="border-t-2 border-black">
+        <div class="py-12 flex flex-col gap-10 lg:flex-row lg:items-center">
+            <div class="left lg:pr-[80px] w-full lg:w-3/5">
+                <div class="frame w-full h-[500px] shadow-lg shadow-black/40 overflow-hidden cursor-pointer">
+                    <img src="./images/A premium health Website.png"
+                        class="object-cover w-full translate-y-0 ease-in-out duration-[12000ms]" alt="website">
+                </div>
+            </div>
+            <div class="right w-full lg:w-2/5">
+                <h2 class="text-primary-color text-5xl font-bold mb-3">A Premium Health & Weight Management</h2>
+                <p>I also worked on another freelancing project using the Elementor Theme builder and included
+                    GravityForm for forms. This website is all about health, covering topics like losing weight, gaining
+                    weight, and more.</p>
+                <div class="mt-5">
+                    <a href="https://apremiumhealth.com/" target="_blank"
+                        class="text-white bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Discover</a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="border-t-2 border-black">
+        <div class="py-12 flex flex-col gap-10 lg:flex-row lg:items-center">
+            <div class="left lg:pr-[80px] w-full lg:w-3/5">
+                <div class="frame w-full h-[500px] shadow-lg shadow-black/40 overflow-hidden cursor-pointer">
+                    <img src="./images/Myacme Landing Website.png"
+                        class="object-cover w-full translate-y-0 ease-in-out duration-[12000ms]" alt="website">
+                </div>
+            </div>
+            <div class="right w-full lg:w-2/5">
+                <h2 class="text-primary-color text-5xl font-bold mb-3">Dr M K Sharma (A Landing Page)</h2>
+                <p>This website is Dr. M K Sharma's landing page, showcasing his expertise as one of the best
+                    sexologists in Jaipur. It's a simple single-page site built on WordPress with the help of the
+                    Elementor builder.</p>
+                <div class="mt-5">
+                    <a href="https://sexologist.myacme.in/" target="_blank"
+                        class="text-white bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Discover</a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="border-t-2 border-black">
+        <div class="py-12 flex flex-col gap-10 lg:flex-row lg:items-center">
+            <div class="left lg:pr-[80px] w-full lg:w-3/5">
+                <div class="frame w-full h-[500px] shadow-lg shadow-black/40 overflow-hidden cursor-pointer">
+                    <img src="./images/Orovac Landing Website.png"
+                        class="object-cover w-full translate-y-0 ease-in-out duration-[12000ms]" alt="website">
+                </div>
+            </div>
+            <div class="right w-full lg:w-2/5">
+                <h2 class="text-primary-color text-5xl font-bold mb-3">Orovac Oral Care(A Landing Page)</h2>
+                <p>This website is a one-page landing site for Orovac Oral Care, and we built it using the Elementor
+                    Theme builder on WordPress. We also incorporated GravityForm for collecting leads. It's a website
+                    dedicated to oral care specialists in India.</p>
+                <div class="mt-5">
+                    <a href="https://implant.orovac.com/" target="_blank"
+                        class="text-white bg-gradient-to-r from-primary-color via-purple-600 to-primary-color hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Discover</a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="border-t-2 border-black">
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact" class="container px-4 flex mx-auto py-16 flex-col gap-10 lg:flex-row lg:items-center">
+        <div class="left w-full lg:w-1/2">
+            <div class="pb-5">
+                <p class="text-black uppercase text-xs font-semibold pb-5">Get In Touch</p>
+                <h2 class="text-primary-color text-5xl font-bold mb-3">Contact Us</h2>
+                <p>Have any questions? Feel free to contact me!</p>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center gap-5">
+                    <div class="icon">
+                        <svg class="h-6 w-6 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" />
+                        </svg>
+                    </div>
+                    <div class="details">
+                        <a href="mail:sealargha@gmail.com"
+                            class=" text-primary-color hover:text-purple-600 text-lg font-bold">sealargha@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div class="icon">
+                        <svg class="h-6 w-6 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        </svg>
+                    </div>
+                    <div class="details">
+                        <a href="tel:7003989928"
+                            class=" text-primary-color hover:text-purple-600 text-lg font-bold">+91-7003989928</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div class="icon">
+                        <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div class="details">
+                        <a class="cursor-pointer text-primary-color hover:text-purple-600 text-lg font-bold">Saltlake,
+                            Kolkata
+                            India</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right w-full lg:w-1/2">
+            <form id="contact-form" action="" class="space-y-8" onsubmit="submitForm(); reset();">
+                <div>
+                    <label for="name" class="block mb-2 text-lg font-bold text-gray-900">Name</label>
+                    <input type="text" id="name"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-color/50 focus:border-primary-color"
+                        placeholder="name" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-lg font-bold text-gray-900">Email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-color/50 focus:border-primary-color block w-full p-3"
+                        placeholder="name@mail.com" required>
+                </div>
+
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-lg font-bold text-gray-900">Your
+                        message</label>
+                    <textarea id="message" rows="6"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-color/50 focus:border-primary-color"
+                        placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" onclick="gotowhatsapp();"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-color sm:w-fit hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer class="bg-white container mx-auto">
+        <div class="mx-auto w-full px-4 pb-6 lg:pb-8">
+            <hr class="mb-6 border-black sm:mx-auto lg:my-8" />
+            <div class="flex justify-center sm:flex-row flex-col items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center">© 2023 <a href="/" class="hover:underline">Argha's
+                        Portfolio</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center items-center sm:mt-0">
+
+                    <a href="https://www.linkedin.com/in/argha-seal-95b0181b3/"
+                        class="text-primary-color hover:text-purple-600 ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 15 15">
+                            <path fill-rule="evenodd"
+                                d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                                clip-rule="evenodd" />
+                            <path d="M3 5.012H0V15h3V5.012Z" />
+                        </svg>
+
+                        <span class="sr-only">Linkdine account</span>
+                    </a>
+                    <a href="https://twitter.com/bobyseal?t=CP-vL5IdhFdpQDhDS7oX7g&s=08"
+                        class="text-primary-color hover:text-purple-600 ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="https://github.com/ARGHASeal007" class="text-primary-color hover:text-purple-600 ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="./ham-menu.js"></script>
+    <script src="./autoType.js"></script>
+    <script src="./form.js"></script>
+</body>
+
+</html>
